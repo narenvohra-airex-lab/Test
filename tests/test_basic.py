@@ -1,10 +1,13 @@
 # importing the module
 import pytest
 
-#defining an another function  
+#defining a basic function
+def add_numbers(a, b):
+    return a - b
+
 def test_basic():
 
-    assert 3 + 4 == 7
+    assert add_numbers(3,4) == 7
 
 if  __name__ == "__main__":
     test_basic()
